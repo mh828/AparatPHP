@@ -1,8 +1,13 @@
-# راهنمای استفاده از کتابخانه AparatAPI
+#AparatAPI Manual
 
+## Introduction
+AparatAPI is a php library for ease using of [Aparat website](https://aparat.com) API. 
 
-#import classes
-ابتدا لازم است که برای استفاده از کلاسهای کتابخانه یک autoloader تعریف کنیم که با استفاده از فانکشن spl_autoload_register این که کار به اسانی انجام میشود
+[Aparat API resource](https://www.aparat.com/api)
+
+## Getting Start
+to use this library first you must include library class to your project,
+thus best way is create an autoloader to automate that process.
 ```php
 spl_autoload_register(function ($ns) {
     $path = str_replace('\\', '/', __DIR__ . '/Classes/' . $ns) . '.php';
@@ -12,6 +17,17 @@ spl_autoload_register(function ($ns) {
 }, false, true);
 ```
 
+# Available methods
+    * login
+    * profile
+    * userBySearch
+    * profileCategories
+    * video
+    * categoryVideos
+    * videoByUser
+    * videoBySearch
 
 **Author:** Mahdi Hasanpour
-[Donate Me](https://idpay.ir/mahdi-hasanpour)
+
+
+[<img src="https://idpay.ir/icon-180.png" alt='Donate me' title='Donate me' width="75px" />](https://idpay.ir/mahdi-hasanpour)
