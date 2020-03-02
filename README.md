@@ -1,4 +1,4 @@
-#AparatAPI Manual
+# AparatAPI Manual
 
 ## Introduction
 AparatAPI is a php library for ease using of [Aparat website](https://aparat.com) API. 
